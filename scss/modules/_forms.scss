@@ -1,0 +1,127 @@
+#slider-range{
+	border: none;
+	background-color: $gray-700;
+	height: 5px;
+	#custom-handle,
+	#custom-handle_2{
+		top: -.5em;
+		border-radius: 50%;
+		background-color: white;
+		border: 3px solid $primary;
+		outline: transparent;
+		span{
+			top: 20px;
+			position: absolute;
+			left:-10px;
+			&:before{
+				content: '$'
+			}
+		}
+		
+	}
+	.ui-slider-range.ui-corner-all.ui-widget-header{
+		background-color: $cyan;
+		border: none
+	}
+}
+
+/**tab product**/
+.product-tab{
+	.tab-content{
+		border:transparent
+	}
+}
+
+/* Табы в странице продукта**/
+.servises-tab{
+	background-color: white;
+	font-size: 14px;
+	margin-top: 50px;
+}
+.nav-tabs{
+    border: none;
+	.nav-link-item{
+		flex-grow: 1;
+		text-align: center;
+		.nav-link{
+			color: $cyan;
+			border-bottom:3px solid transparent;
+			border:1px solid #cccc;
+			border-right: none;
+			padding: 1rem 1rem;
+			&.active,
+			&:hover{
+				border-bottom:3px solid $primary;
+				color: $dark
+			}
+		}
+		&:last-of-type{
+			border-right:1px solid #ccc
+		}	
+	}  
+}
+
+.tab-content{
+	border:1px solid #cccc;
+	.tab-pane {
+		padding: 30px;
+	}
+}
+
+.product{
+	padding: 110px 0 70px 0;
+	.product-tab{
+		ul{
+			justify-content: center;
+			.nav-link{
+				text-align: center;
+				padding: 5px 20px;
+				font-size: 12px;
+				background-color: white;
+				margin-bottom: 40px;
+				margin-left: 5px;
+				&.active,
+				&:hover{
+					background-color: $secondary;
+					color: $white;
+				}
+			}
+			li a{
+				color:  $dark;
+				&.active,
+				&:hover{
+					color: $white;
+				}
+			}
+		}
+	}
+}
+
+.carusel-product{
+	background-color: white;
+	padding: 100px 0;
+	.carousel-indicators{
+		position: absolute;
+		bottom: -50px;
+		li{
+			width: 12px;
+			height: 12px;
+			background-color:$gray-800;
+			background-clip: content-box;
+			border-radius: 50%
+		}	
+	}
+	.carousel-indicators .active{
+		background-color: $primary
+	}
+}
+
+.products-listing{
+	.sort-block{
+		p{
+			margin: 0 10px
+		}
+	}	
+}
+
+

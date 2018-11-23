@@ -1,0 +1,43 @@
+.banner{
+    background: url('../../img/main-slide.jpg') no-repeat center/cover;
+    
+    height: 500px;
+    text-align: center;
+    h1,h4{
+        color: $white;
+    }
+    h4{
+        font-weight: 400
+    }
+    h1{
+        @media(max-width:479px){
+            font-size: 36px;
+        }
+    }
+    form{
+        height: 55px;
+        display: flex;
+        
+        input{
+            border-radius: 3px;
+            border: transparent;
+            height: 55px;
+        }
+        button{
+            background-color: $white;
+            border: transparent;
+            border-radius: 3px;
+            margin-left: -3px;
+            span.fa{
+                color: $gray-800;
+                font-size: 1.3rem;
+            }
+        }
+        
+    }
+    
+}
+
+.banner.max-height{
+    max-height: 228px
+}

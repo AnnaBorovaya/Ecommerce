@@ -1,0 +1,50 @@
+.became-an-authore{
+    padding: 120px 0;
+    .picture{
+        position: relative;
+        height: 400px;
+        width: 100%;
+        background: url("../../img/ghj.jpg") no-repeat center/cover;
+        .green-square{
+            background-color: $primary;
+            padding: 50px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            box-shadow: 0 14px 28px rgba(0,0,0,0.20),0 10px 10px rgba(0,0,0,0.17);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            @media(max-width:479px){
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+            }
+            @media(max-width: 599px){
+                padding: 40px 20px
+            }
+            h3{
+                color: white;
+                text-align: right;
+                @media(max-width:479px){
+                   margin-bottom: 10px;
+                   text-align: center;
+                }
+            }
+            a{
+                background-color: white;
+                padding: 15px 35px;
+                color:$gray-900;
+                @media(max-width:599px){
+                    padding: 15px 20px;
+                    display: block;
+                 }
+                &:hover{
+                    background-color: $gray-900;
+                    color:white
+                }
+            }
+        }
+    }
+}

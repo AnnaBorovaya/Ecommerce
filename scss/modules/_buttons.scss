@@ -1,0 +1,75 @@
+.btn{
+    color: $white;
+}
+
+.buttons-on-product{
+    .btn-group-lg{
+        .btn{
+            padding: 12px 25px;
+    }   }
+}
+
+.btn-cyan{
+    background-color: $cyan;
+}
+
+.button-icon{
+    margin-right: 5px;
+}
+
+.btn-group.btn-group.btn-group-offset-lg{
+    flex-wrap: wrap;
+    margin-left: -1rem;
+    margin-bottom: -1rem;
+    > * {
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+
+.btn-group.btn-group.btn-group-offset-xs{
+    flex-wrap: wrap;
+    margin-left: -3px;
+    margin-bottom: -3px;
+    > * {
+        margin-left: 3px;
+        margin-bottom: 3px;
+    }
+}
+
+.btn-social-lg{
+    width: 54px;
+    height: 50px;
+    text-align: center;
+    padding: 0;
+    .icon{
+        font-size: 1.125rem;
+        line-height: 50px
+    }
+}
+
+@mixin social-buttons-hover($color_1, $color_2){
+    color:$color_1;
+    background-color: $color_2;
+    &:hover{
+        color: $color_2;
+        background-color: $color_1;
+        border:2px solid $color_2;
+    }
+}
+
+.btn-social-color.facebook{
+    @include social-buttons-hover ($white, $facebook)
+}
+
+.btn-social-color.twitter{
+    @include social-buttons-hover ($white, $twitter)
+}
+
+.btn-social-color.linkidin{
+    @include social-buttons-hover ($white, $linkidin)
+}
+
+.btn-social-color.pinterest{
+    @include social-buttons-hover ($white, $pinterest)
+}

@@ -1,0 +1,150 @@
+.side-bar-product{
+    .side-bar-product-prise,
+    .side-bar-product-author,
+    .side-bar-product-information,
+    .side-bar-product-acount{
+        margin-bottom: 30px;
+        background-color: white;
+        padding: 20px;
+        h5{
+            padding-bottom: 20px;
+            border-bottom: 1px solid #cccc;
+            margin-bottom: 20px
+        }
+        .prise,
+        .psdboss{
+            justify-content: space-between;
+            display: flex;
+            align-items: center;
+            span{
+                font-size: 24px;
+                color: $secondary
+            }
+            .btn{
+                background-color: transparent;
+                border: 1px solid $gray-400;
+                padding: 5px 15px;
+                color: $dark;
+                font-size: 12px;
+                &:hover{
+                    background-color: $gray-400;
+                    color: white
+                }
+            }
+        }
+        .group-buttons{
+            margin-top: 20px;
+            .btn{
+                width: 100%;
+                padding: 10px 20px;
+                margin-bottom: 10px;
+                border: 2px solid transparent;
+            }
+            .btn.cart{
+                background-color: $primary;
+                &:hover{
+                    background-color: white;
+                    border: 2px solid $primary;
+                    color: $primary
+                }
+            }
+            
+            .btn.heart{
+                background-color: $linkidin;
+                &:hover{
+                    background-color: white;
+                    border: 2px solid $linkidin;
+                    color: $linkidin
+                }
+            }
+            .btn.without-icon{
+                background-color: $cyan;
+                &:hover{
+                    background-color: white;
+                    border: 2px solid $cyan;
+                    color: $cyan
+                } 
+            }
+        }
+        
+    }
+    .side-bar-product-author{
+        .psdboss{
+            .img-wrapper{
+                width: 70px;
+                height: 57px;
+                background-color: $gray-400;
+                margin-right: 15px;
+            } 
+            .right-block{
+                display: flex;
+                flex-wrap: wrap
+            }
+        }
+        .label-group{
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            flex-grow: 1;
+            .shield{
+                position: relative;
+                width: 35px;
+                height: 25px;
+                .shield-icon{
+                    color: white;
+                    position: absolute;
+                    left: 9px;
+                    top: 1pxppp;
+                    top: 11px;
+                    z-index: 1001;
+                }
+                .shield-top{
+                    width: 34px;
+                    height: 25px;
+                    margin-right: 5px;
+                    flex-grow: 1;
+                    position: relative;
+                    display: inline-block;
+                    border-radius: 2px;
+                    z-index: 1
+                }
+                .shield-bottom{
+                    position: absolute;
+                    left:1px;
+                    bottom: -46%;
+                    width: 32px;
+                    height: 32px;
+                    border-radius: 15px 5px;
+                    display: inline-block;
+                    transform: rotate(-45deg);
+                    z-index: 0;
+                }
+                .orange{background-color:#ffb74d }
+                .red{background-color: #f4511e}
+                .blue{background-color:  #00bcd4}
+                .green{background-color:  #66bb6a}
+                .gray{background-color:#cfd8dc }
+            }
+        }                           
+    }
+    .side-bar-product-information{
+        p{
+            font-size: 14px
+        }
+    }
+    .side-bar-product-acount{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        @media(max-width: 767px){
+            justify-content: space-around;
+        }
+        h6{
+            margin-bottom: 1;
+        }
+        .sales{
+            font-size: 14px;
+            line-height: 14px;
+        }
+    }
+}

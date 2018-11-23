@@ -1,0 +1,87 @@
+.card{
+    border-radius: 0;
+    transition: 0.2s;
+    &:hover{
+        box-shadow: 0 14px 28px rgba(0,0,0,0.20),0 10px 10px rgba(0,0,0,0.17)
+    }
+    .card-img-top-wrapper{
+        max-height: 168px;
+        overflow: hidden;
+        @media(max-width:991px){
+            max-height: 200px;
+        }
+        @media(max-width:767px){
+            max-height: 260px;
+        }
+        img{
+            
+            border-radius: 0
+        }
+    }
+    &-body{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: $card-spacer-x-sm;
+        padding-right: 20px;
+        padding-left: 20px;
+        padding-bottom: 28px
+    }
+    &-footer{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: transparent;
+        padding: $spacer $card-spacer-x ;
+        padding-right: 20px;
+        padding-left: 20px;
+        .card-rating{
+            display: flex;
+            align-items: center;
+            i{
+                font-size: $font-size-sm;
+                transition: 0.2s;
+                cursor: pointer;
+                color: $orange;
+                &.marked,
+                &:hover{
+                    &:before{
+                        content: '\f005'
+                    }
+
+                }
+            }
+            .card-rating-number{
+                color:$cyan;
+                margin-left: 3px;
+
+            }
+            .card-rating-value{
+                color: $dark;
+            }
+        }
+        .card-author{
+            display: flex;
+            .card-author-name{
+                color: $cyan;
+                align-self: center;
+                &:hover{
+                    color: $primary;
+                }
+            }
+            .card-author-photo{
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                background-color: $gray-900;
+                margin-right: 5px;
+            }
+        }
+       
+    }
+
+}
+
+//card-spacer
+
+$card-spacer-y:0.35rem

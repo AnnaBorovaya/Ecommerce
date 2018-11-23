@@ -1,0 +1,21 @@
+.tutorials{
+    padding: 110px 0 95px 0;
+    background-color: $white;
+    h2{
+        margin-bottom: 50px;
+    }
+    .tutorials-item{
+        background-color: $gray-600;
+        padding-bottom: 30px;
+        .img-wrapper{
+            width: 100%;
+            min-height: 265px;
+            background-color: $gray-700;
+            overflow: hidden;
+            margin-bottom: 40px;
+        }
+        h3{
+            font-weight: 500;
+        }
+    }
+}

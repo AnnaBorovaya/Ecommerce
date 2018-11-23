@@ -1,0 +1,50 @@
+.navbar{
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    margin-left: -1rem;
+}
+.navbar-expand-md{
+    padding-left: 0;
+    padding-right: 0;
+    .navbar-nav{
+
+        font-size: 0.875rem;
+        font-weight: 500;
+        @media(min-width:768px){
+            margin-left: -1rem;
+           margin-right: -1rem;
+        }
+        .nav-link{
+            @media(min-width:768px){
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+        }   
+    }
+}
+
+.navbar-dark .navbar-nav .nav-link{
+    color: $white;
+    &:hover{
+        color:$primary;
+    }
+}
+.pagination{
+    .page-item{
+        margin-right: 10px;
+        a{
+        border: transparent;
+        padding: 8px 16px;
+        color: $dark;
+        }
+        &:hover a{
+            color:white;
+            background-color: $secondary;
+        }
+    } 
+}
+
+
+ 
+
+

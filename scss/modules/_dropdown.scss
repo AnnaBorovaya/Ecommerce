@@ -1,0 +1,97 @@
+
+/***dropdown cart***/
+.dropdown-item-small-img{
+    .card{
+        flex-direction: row;
+        border: none;
+        .card-img-top-wrapper{
+            width: 90px;
+            img{
+                height: 100%;
+            }
+        }
+        .card-body{
+            flex-direction: column;
+            padding-bottom: 0;
+            padding-top: 5px;
+            align-items: start;
+            .card-title{
+                margin-bottom: 0;
+            }
+            .card-cat{
+                color: $primary;
+            }
+        }
+    }
+}
+.dropdown-item-small-img.product-page{
+    .card-body{
+        padding-bottom: 10px;
+        padding-top: 15px;
+        .card-title{
+            font-size: 14px;
+            .card-cat{
+                font-size: 12px;
+                .card-body-prise{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+.cart-drop{
+    .btn{
+        border-radius: 0
+    }
+}
+/*****dropdown bell*/
+
+.dropdown.bell-drop{
+    .dropdown-menu.show{
+        top: 25px !important;
+        left: -240px !important;
+        .dropdown-item:hover .fa.fa-bell-o{
+            color:$secondary
+        }
+    }
+
+}
+
+/*****dropdown letter*/
+.dropdown.letter-drop{
+    .dropdown-menu.show{
+        top: 25px !important;
+        left: -240px !important;
+        .dropdown-item:hover .fa-envelope-o{
+            color:$secondary
+
+        }
+    }
+
+}
+
+/**dropdawn accou*///nt
+
+.account-info{
+    .messages-block{
+        .info-inner.user{
+            .dropdown-menu{
+                padding: 20px;
+                font-size: 12px;
+                font-weight: 400;
+                top:38px !important;
+                left:-50px !important;
+                li{
+                    a{
+                        color: $dark
+                    }
+                }
+            }
+    }   }
+}
+
+.show > .btn-secondary.dropdown-toggle:focus,
+.btn-secondary:focus, .btn-secondary.focus {   
+    box-shadow: none!important
+}

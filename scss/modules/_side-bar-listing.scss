@@ -1,0 +1,72 @@
+.sidebar-block {
+    background-color: $white;
+    border:1px solid $gray-500;
+    padding: 1.9rem 1.5625rem;
+    & + .sidebar-block{
+        margin-top: 30px;
+    }
+    .controls{
+        margin-bottom: 50px;
+        margin-top: 30px;
+    }
+    h4{
+        padding-bottom: 20px;
+        border-bottom: 1px solid $gray-500;
+        margin-bottom: 20px;
+    }
+    .card{
+        border: none;
+        & + .card{
+            margin-top: 30px;
+            border-top:1px solid $gray-500;
+            padding-top: 30px ;
+        }
+            &-body,
+            &-footer{
+                padding-left: 0;
+                padding-right: 0;
+                padding-bottom:13px;
+            }
+            &-body{
+                &-inner{
+                    h5{
+                        margin-bottom: 0
+                    }
+                }
+            }
+            &-footer{
+                padding-top: 0;
+                border-top: none;
+            }
+            &-body-prise{
+                font-weight: bold;
+                color: $dark;
+            }
+        }
+        .listing{
+            li{
+            font-size: 0.9375 rem;
+            color: $dark;
+            &:hover,
+            &:hover span{
+                color:$primary
+            }
+        }
+    }
+}
+
+.range-block{
+    .search{
+        margin-right: 7px;
+    }
+}
+.top-sellers{
+    .card + .card{
+        margin-top: 0
+    }
+    .card-body{
+        padding-top: 1.0rem;
+    }
+}
+
+
